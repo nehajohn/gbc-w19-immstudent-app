@@ -1,0 +1,64 @@
+body {
+  font-family: georgia, serif;
+  --our-white: #e9f0e1;
+}
+
+.document-header {
+  background-color: rgb(79, 74, 70);
+  color: var(--our-white);
+  font-family: 'Poppins', sans-serif;
+}
+
+.primary-nav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+  max-width: 600px;
+  margin: auto;
+  padding: 0.5em 0;
+}
+
+.logo {
+  grid-column: 1 / span 1;
+}
+
+.hamburger {
+  background: none;
+  border: 1px solid var(--our-white);
+  border-radius: 0.125em;
+  outline: none;
+  font-size: 1em;
+  color: var(--our-white);
+  grid-column: 12 / span 1;
+}
+
+.header-title {
+  text-align: center;
+  grid-column: 2 / span 10;
+}
+
+.main-menu {
+  grid-column: 1 / span 12;
+  text-align: center;
+  display: none;
+}
+.open {
+  display: block;
+}
+
+
+.main-menu a {
+  color: #eee;
+  text-transform: uppercase;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.tasks {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+  max-width: 600px;
+  margin: auto;
+  padding: 0.5em 0;
+}
